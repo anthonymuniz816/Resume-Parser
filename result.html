@@ -1,0 +1,20 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Parsed Resume Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Parsed Resume Information</h1>
+    <ul>
+      <li>Name: {{ info.name }}</li>
+      <li>Email: {{ info.email }}</li>
+      <li>Phone: {{ info.phone }}</li>
+      <li>University: {{ info.university }}</li>
+      <li>Degree: {{ info.degree }}</li>
+      <li>Skills: {{ info.skills | join(', ') }}</li>
+    </ul>
+  </body>
+</html>
